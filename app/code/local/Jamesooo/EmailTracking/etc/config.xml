@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<config>
+  <modules>
+    <Jamesooo_EmailTracking>
+      <version>0.1.0</version>
+    </Jamesooo_EmailTracking>
+  </modules>
+  <global>
+    <models>
+      <emailtracking>
+      <class>Jamesooo_EmailTracking_Model</class>
+      <resourceModel>emailtracking</resourceModel>
+      </emailtracking>
+    </models>
+    <resources>
+      <emailtracking_setup>
+        <setup>
+          <module>Jamesooo_EmailTracking</module>
+          <class>Jamesooo_EmailTracking_Model_Resource_Mysql4_Setup</class>
+        </setup>
+        <connection>
+          <use>core_setup</use>
+        </connection>
+      </emailtracking_setup>
+      <emailtracking_write>
+        <connection>
+          <use>core_write</use>
+        </connection>
+      </emailtracking_write>
+      <emailtracking_read>
+        <connection>
+          <use>core_read</use>
+        </connection>
+      </emailtracking_read>
+    </resources>
+  </global>
+</config>

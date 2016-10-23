@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jamesooo_EmailTracking>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Jamesooo_EmailTracking>
+    </modules>
+</config>
